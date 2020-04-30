@@ -1,0 +1,14 @@
+site_name: Charting for Modern C++
+nav:
+    - Introduction: index.md
+    - Syntax: syntax.md
+    - Examples: examples.md
+
+theme:
+    name: mkdocs
+    custom_dir: theme/
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        separator: "-"
