@@ -15,7 +15,6 @@
 #include <fmt/core.h>
 #include <fmt/format.h>
 #include "utils.hpp"
-#include <armadillo>
 #include <stdexcept>
 
 #ifndef  PLOT_CANVAS_HPP
@@ -37,7 +36,7 @@ namespace plot::impl {
 		void group (std::variant<size_t, align_t> x, std::variant<size_t, align_t> y, const attribute_t& attr, std::function<void()> const& call );
 		void rect(float x, float y, float width, float height, float rx, float ry, const attribute_t& attr );
 		void circle(size_t x, size_t y, size_t radius, const attribute_t& attr ){};
-		void elipse(size_t cx, size_t cy, size_t rx, size_t ry, const attribute_t& attr ){};
+		void ellipse(size_t cx, size_t cy, size_t rx, size_t ry, const attribute_t& attr ){};
 		void line(size_t x1, size_t y1, size_t x2 , size_t y2, unsigned stroke, size_t width, const attribute_t& attr ){};
 		void poly_line(const std::vector<size_t>&x, const std::vector<size_t>&y, unsigned stroke, size_t width, const attribute_t& attr ){};
 		static std::pair<size_t,size_t>
