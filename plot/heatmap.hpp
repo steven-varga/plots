@@ -6,7 +6,6 @@
 #include <vector>
 #include <tuple>
 #include <experimental/type_traits>
-#include <armadillo>
 
 #ifndef  PLOT_HEATMAP_HPP
 #define  PLOT_HEATMAP_HPP

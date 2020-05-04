@@ -50,7 +50,7 @@ namespace plot {
 		footnote(const std::string& txt, Ts... args) {
 		}
 		void ostream( impl::canvas_t& os ) const {
-			std::cout << "<footnote base>\n";
+			std::clog << "<footnote base>\n";
 		}
 	};
 	template <class... Ts>
